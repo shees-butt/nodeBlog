@@ -1,0 +1,24 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "shees",
+    "database": "blog",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "shees",
+    "database": "blog",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "shees",
+    "database": "blog",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "jwtSecret": "My$up3rS3cr3tP@ssphr@s3!"
+}

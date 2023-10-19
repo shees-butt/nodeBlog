@@ -1,4 +1,5 @@
 'use strict';
+
 const db = require('../db'); // Import db.js file where Sequelize is defined
 
 module.exports = {

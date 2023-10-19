@@ -1,7 +1,7 @@
 const Post = require('../model/postModel');
 const Comment = require('../model/commentModel'); 
 const jwt = require('jsonwebtoken');
-const config = require('../../config.json');
+const config = require('../../config/config.json');
 const secretKey = config.jwtSecret;
 
 const createPost = async (req, res) => {

@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const config = require('../../config.json');
+const config = require('../../config/config.json');
 const secretKey = config.jwtSecret;
 
 const userAuthMiddleware = (req, res, next) => {
@@ -12,9 +12,10 @@ const userAuthMiddleware = (req, res, next) => {
 
   try {
     const decoded = jwt.verify(token, secretKey);
-    if (decoded.role === 'user') {
+    if (!decoded.isAdmin) {
       // User is authenticated as a user
       req.user = decoded;
+      console.log("user rights");
       next();
     } else {
       return res.status(403).json({ error: 'Forbidden: User access only' });
