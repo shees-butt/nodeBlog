@@ -15,7 +15,7 @@ app.use(authRoutes);
 app.use(postRoutes);
 app.use(commentRoutes);
 
-// Sync the database
+// Sync the database abc
 // db.sync()
 //   .then(() => {
 //     console.log('Database is connected and synchronized');
