@@ -1,0 +1,12 @@
+{
+  "development": {
+    "dialect": "postgres", 
+    "host": "localhost",  
+    "username": "postgres",  
+    "password": "shees",  
+    "database": "blog",  
+    "migrationStorageTableName": "sequelize_meta",  
+    "migrationStorageTableSchema": "public"
+  },
+  "jwtSecret": "My$up3rS3cr3tP@ssphr@s3!"
+}
